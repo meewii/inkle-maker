@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!-- Base application theme. -->
+    <style name="Theme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Theme Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_light</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_light</item>
+
+        <item name="colorError">@color/error</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="android:colorBackground">@color/background</item>
+
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnError">@color/black</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnBackground">@color/white</item>
+
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+
+        <!-- Theme Typography -->
+        <item name="textAppearanceHeadline1">@style/Theme.TextAppearance.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/Theme.TextAppearance.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/Theme.TextAppearance.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/Theme.TextAppearance.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/Theme.TextAppearance.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/Theme.TextAppearance.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/Theme.TextAppearance.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/Theme.TextAppearance.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/Theme.TextAppearance.Body1</item>
+        <item name="textAppearanceBody2">@style/Theme.TextAppearance.Body2</item>
+        <item name="textAppearanceCaption">@style/Theme.TextAppearance.Caption</item>
+        <item name="textAppearanceButton">@style/Theme.TextAppearance.Button</item>
+        <item name="textAppearanceOverline">@style/Theme.TextAppearance.Overline</item>
+
+        <!-- Theme Shapes -->
+        <item name="shapeAppearanceSmallComponent">@style/Theme.ShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/Theme.ShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/Theme.ShapeAppearance.LargeComponent</item>
+
+        <!-- Theme Styles -->
+        <item name="textInputStyle">@style/Theme.TextInputLayout</item>
+        <item name="materialButtonStyle">@style/Theme.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Theme.Button.Outlined.Dark</item>
+        <!--<item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>-->
+        <!--<item name="bottomSheetDialogTheme"></item>-->
+        <!--<item name="navigationViewStyle"></item>-->
+        <!--<item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>-->
+    </style>
+
+</resources>

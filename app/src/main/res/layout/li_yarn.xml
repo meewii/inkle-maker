@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ui_yarn_container"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="8dp">
+
+    <ImageView
+        android:id="@+id/ui_yarn_color"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_yarn_background_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_yarn_l"
+        tools:tint="@color/pink_light" />
+
+    <TextView
+        android:id="@+id/ui_yarn_name"
+        style="?attr/textAppearanceBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ui_yarn_size"
+        app:layout_constraintStart_toEndOf="@+id/ui_yarn_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Color name" />
+
+    <TextView
+        android:id="@+id/ui_yarn_size"
+        style="?attr/textAppearanceCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ui_yarn_color"
+        app:layout_constraintTop_toBottomOf="@+id/ui_yarn_name"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Thin thread" />
+
+    <com.gdt.inklemaker.ui.ConfirmImageButton
+        android:id="@+id/ui_yarn_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_delete_24px"
+        android:tint="@color/primary_light"
+        app:cib_dialogTitle="@string/confirm_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

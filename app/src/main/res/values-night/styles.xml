@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="Theme.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/secondary_light</item>
+        <item name="iconTint">@color/secondary_light</item>
+        <item name="rippleColor">@color/secondary_dark</item>
+        <item name="strokeColor">@color/secondary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="shapeAppearance">@style/Theme.ShapeAppearance.Button</item>
+    </style>
+
+    <style name="Theme.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/primary</item>
+        <item name="itemBackground">@null</item>
+        <item name="itemHorizontalTranslationEnabled">true</item>
+        <item name="itemIconTint">@drawable/bottom_nav_item_tint_night</item>
+        <item name="itemTextColor">@drawable/bottom_nav_item_tint_night</item>
+        <item name="itemRippleColor">@drawable/bottom_nav_ripple_color</item>
+    </style>
+
+</resources>

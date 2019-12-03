@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/nav_bottombar_inkles">
+
+  <fragment
+      android:id="@+id/nav_bottombar_inkles"
+      android:name="com.gdt.inklemaker.nav.inkles.list.InkleListFragment"
+      android:label="@string/fragment_label_inkle">
+    <action
+        android:id="@+id/action_add_inkle"
+        app:destination="@id/nav_add_inkle"
+        app:enterAnim="@anim/slide_in_up"
+        app:exitAnim="@anim/slide_out_down"
+        app:popExitAnim="@anim/slide_out_down" />
+  </fragment>
+
+  <fragment
+      android:id="@+id/nav_bottombar_yarns"
+      android:name="com.gdt.inklemaker.nav.yarns.YarnListFragment"
+      android:label="@string/fragment_label_yarns">
+    <action
+        android:id="@+id/action_add_yarn"
+        app:destination="@id/nav_add_yarn"
+        app:enterAnim="@anim/slide_in_up"
+        app:exitAnim="@anim/slide_out_down"
+        app:popExitAnim="@anim/slide_out_down" />
+  </fragment>
+
+  <fragment
+      android:id="@+id/nav_bottombar_settings"
+      android:name="com.gdt.inklemaker.settings.SettingsFragment"
+      android:label="@string/fragment_label_settings" />
+
+  <fragment
+      android:id="@+id/nav_add_yarn"
+      android:name="com.gdt.inklemaker.nav.yarns.add.AddYarnFragment"
+      android:label="@string/add_yarn_title"
+      tools:layout="@layout/fragment_add_yarn" />
+
+  <navigation
+      android:id="@+id/nav_add_inkle"
+      app:startDestination="@id/nav_add_inkle_set_up">
+
+    <fragment
+        android:id="@+id/nav_add_inkle_set_up"
+        android:name="com.gdt.inklemaker.nav.inkles.add.setup.SetUpInkleFragment"
+        android:label="@string/fragment_label_add_set_up_inkle">
+      <action
+          android:id="@+id/action_inkle_set_up_done"
+          app:destination="@id/nav_add_inkle_draw"
+          app:enterAnim="@anim/slide_in_right"
+          app:exitAnim="@anim/slide_out_left"
+          app:popEnterAnim="@anim/slide_in_left"
+          app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_inkle_draw"
+        android:name="com.gdt.inklemaker.nav.inkles.add.draw.DrawInkleFragment"
+        android:label="@string/fragment_label_add_draw_inkle">
+      <action
+          android:id="@+id/action_inkle_draw_done"
+          app:destination="@id/nav_add_inkle_recap"
+          app:enterAnim="@anim/slide_in_right"
+          app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_inkle_recap"
+        android:name="com.gdt.inklemaker.nav.inkles.add.recap.RecapInkleFragment"
+        android:label="@string/fragment_label_add_recap_inkle">
+
+      <action
+          android:id="@+id/action_inkle_recap_done"
+          app:destination="@id/nav_bottombar_inkles"
+          app:enterAnim="@anim/slide_in_right"
+          app:exitAnim="@anim/slide_out_left"
+          app:popUpTo="@+id/nav_bottombar_inkles"
+          app:popUpToInclusive="true" />
+    </fragment>
+
+  </navigation>
+
+</navigation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TextAppearance">
+        <item name="fontFamily">@font/firasans</item>
+        <item name="android:fontFamily">@font/firasans</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/firasansextracondensed</item>
+        <item name="android:fontFamily">@font/firasansextracondensed</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/firasansextracondensed</item>
+        <item name="android:fontFamily">@font/firasansextracondensed</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/firasansextracondensed</item>
+        <item name="android:fontFamily">@font/firasansextracondensed</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/firasansextracondensed</item>
+        <item name="android:fontFamily">@font/firasansextracondensed</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/firasansextracondensed</item>
+        <item name="android:fontFamily">@font/firasansextracondensed</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/firasansextracondensed_medium</item>
+        <item name="android:fontFamily">@font/firasansextracondensed_medium</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/firasans</item>
+        <item name="android:fontFamily">@font/firasans</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/firasans</item>
+        <item name="android:fontFamily">@font/firasans</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/firasans</item>
+        <item name="android:fontFamily">@font/firasans</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/firasans</item>
+        <item name="android:fontFamily">@font/firasans</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/firasans</item>
+        <item name="android:fontFamily">@font/firasans</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/firasans</item>
+        <item name="android:fontFamily">@font/firasans</item>
+    </style>
+
+    <style name="Theme.TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/firasansextracondensed_medium</item>
+        <item name="android:fontFamily">@font/firasansextracondensed_medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

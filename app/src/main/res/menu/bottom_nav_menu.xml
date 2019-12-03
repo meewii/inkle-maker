@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_bottombar_inkles"
+        android:icon="@drawable/ic_dashboard_24px"
+        android:title="@string/menu_inkles" />
+
+<!--    <item-->
+<!--        android:id="@+id/nav_templates"-->
+<!--        android:icon="@drawable/ic_templates"-->
+<!--        android:title="@string/menu_templates" />-->
+
+    <item
+        android:id="@+id/nav_bottombar_yarns"
+        android:icon="@drawable/ic_yarn_with_thread"
+        android:title="@string/menu_yarns" />
+
+    <item
+        android:id="@+id/nav_bottombar_settings"
+        android:icon="@drawable/ic_settings_24px"
+        android:title="@string/menu_settings" />
+
+<!--    <item-->
+<!--        android:id="@+id/nav_gallery"-->
+<!--        android:icon="@drawable/ic_photo_library_24px"-->
+<!--        android:title="@string/menu_gallery" />-->
+
+</menu>

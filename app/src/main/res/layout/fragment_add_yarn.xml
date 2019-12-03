@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+        name="viewModel"
+        type="com.gdt.inklemaker.nav.yarns.add.AddYarnViewModel" />
+
+    <variable
+        name="openColorPicker"
+        type="kotlin.jvm.functions.Function0" />
+
+    <variable
+        name="openSizePicker"
+        type="kotlin.jvm.functions.Function0" />
+
+    <variable
+        name="onDone"
+        type="kotlin.jvm.functions.Function0" />
+
+  </data>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/add_yarn_form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+      <androidx.appcompat.widget.AppCompatImageView
+          android:id="@+id/add_yarn_preview"
+          android:layout_width="120dp"
+          android:layout_height="120dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          app:iconRes="@{viewModel.size.iconTail}"
+          app:tintColor="@{viewModel.color}" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/add_yarn_name_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:hint="@string/add_yarn_name_hint"
+          app:endIconMode="clear_text"
+          app:errorEnabled="false"
+          app:errorMessage="@{viewModel.nameError}">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_yarn_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:text="@={viewModel.name}" />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/add_yarn_color_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:hint="@string/add_yarn_color_hint"
+          app:errorEnabled="false"
+          app:errorMessage="@{viewModel.colorError}">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_yarn_color_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:onClick="@{()-> openColorPicker.invoke()}"
+            android:text="@{viewModel.colorHex}"
+            app:textColor="@{viewModel.color}" />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/add_yarn_size_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/activity_vertical_margin"
+          android:hint="@string/add_yarn_thread_size_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_yarn_size_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:onClick="@{()-> openSizePicker.invoke()}"
+            android:text="@{viewModel.size.label}" />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/add_yarn_btn_done"
+          style="?attr/materialButtonOutlinedStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:onClick="@{_ -> viewModel.onAddYarnDone()}"
+          android:text="@string/add_yarn_done" />
+
+      <TextView
+          style="?attr/textAppearanceCaption"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="40dp"
+          android:text="@string/form_mandatory_field"
+          android:textAlignment="textStart" />
+
+    </LinearLayout>
+  </ScrollView>
+</layout>

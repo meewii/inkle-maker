@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="ConfirmImageButton">
+    <attr name="cib_dialogTitle" format="reference|string"/>
+    <attr name="cib_dialogMessage" format="reference|string"/>
+  </declare-styleable>
+</resources>

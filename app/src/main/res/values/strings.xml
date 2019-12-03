@@ -1,0 +1,80 @@
+<resources>
+  <string name="app_name">Inkle Maker</string>
+
+  <string name="menu_inkles">Inkles</string>
+  <string name="menu_templates">Templates</string>
+  <string name="menu_yarns">Yarns</string>
+  <string name="menu_settings">Settings</string>
+  <string name="menu_gallery">Gallery</string>
+
+  <string name="fragment_label_inkle">My inkles</string>
+  <string name="fragment_label_add_inkle">Create inkle</string>
+  <string name="fragment_label_add_set_up_inkle">Set up your inkle</string>
+  <string name="fragment_label_add_draw_inkle">Draw your inkle</string>
+  <string name="fragment_label_add_recap_inkle">Recap</string>
+  <string name="fragment_label_templates">My templates</string>
+  <string name="fragment_label_yarns">My yarns</string>
+  <string name="fragment_label_gallery">My creations</string>
+  <string name="fragment_label_settings">Settings</string>
+
+  <string name="main_text">List of all the inkles that were created by user</string>
+
+  <!-- Nav > Inkle List -->
+  <string name="inkle_in_progress">In progress</string>
+  <string name="inkle_menu_delete">Delete</string>
+  <string name="inkle_menu_edit">Edit</string>
+  <string name="inkle_menu_duplicate">Duplicate</string>
+  <string name="inkle_menu_share">Share</string>
+  <string name="menu_done">@string/done</string>
+  <string name="inkle_list_delete_confirm_title">Are you sure you want to delete this Inkle?</string>
+
+  <!-- Nav > Yarns -->
+  <string name="yarn_size_s">Thin thread</string>
+  <string name="yarn_size_m">Regular thread</string>
+  <string name="yarn_size_l">Thick thread</string>
+
+  <!-- Add new yarn -->
+  <string name="add_yarn_title">Add a new yarn</string>
+  <string name="add_yarn_name_hint">Name*</string>
+  <string name="add_yarn_color_hint">Color</string>
+  <string name="add_yarn_color">Pick a color</string>
+  <string name="add_yarn_thread_size_hint">Thread size</string>
+  <string name="add_yarn_thread_size">The size of the thread</string>
+  <string name="add_yarn_done">@string/done</string>
+  <string name="add_yarn_color_picker_title">Yarn color</string>
+  <string name="add_yarn_color_picker_confirm">Confirm</string>
+  <string name="add_yarn_color_picker_cancel">Cancel</string>
+  <string name="add_yarn_chooser_thin_thread">Thin thread</string>
+  <string name="add_yarn_chooser_regular_thread">Regular thread</string>
+  <string name="add_yarn_chooser_thick_thread">Thick thread</string>
+
+  <!-- Nav > Create > Set up -->
+  <string name="set_up_name_hint">Name*</string>
+  <string name="set_up_length_hint">Length (cm)</string>
+  <string name="set_up_length_help">The length should include the margins necessary to attach the inkle during
+weaving.</string>
+  <string name="set_up_total_threads_hint">Total number of threads*</string>
+  <string name="set_up_split_threads">%1$d upper threads and %2$d lower threads.</string>
+  <string name="set_up_yarns_hint">Pick yarns</string>
+  <string name="set_up_weft_hint">Weft yarn</string>
+  <string name="set_up_warp_hint">Warp yarns*</string>
+  <string name="set_up_done_button">Next</string>
+  <string name="set_up_thread_count_error">This is quite a lot of threads! Are you trying to make a blanket? Please
+let\'s limit it to 100 :)</string>
+  <string name="set_up_length_error">Wow! That\'s some impressive weaving commitment! Maybe 50m is good enough?</string>
+
+  <string name="yarn_picker_done">@string/done</string>
+  <string name="yarn_picker_add">Add new yarns</string>
+  <string name="yarn_picker_add_more">Add more yarns</string>
+  <string name="yarn_picker_no_yarn">You haven\'t added any yarns yet!</string>
+
+  <string name="form_mandatory_field">* Mandatory fields</string>
+  <string name="form_error_general">Oh no! please fix the wrong info.</string>
+  <string name="form_error_empty">This field cannot be empty.</string>
+
+  <string name="confirm_delete">Are you sure you want to delete?</string>
+  <string name="confirm_delete_yes">Yes</string>
+  <string name="confirm_delete_cancel">Cancel</string>
+
+  <string name="done">Done</string>
+</resources>

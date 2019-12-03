@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+    <variable
+        name="onThinThreadClick"
+        type="kotlin.jvm.functions.Function0" />
+
+    <variable
+        name="onRegularThreadClick"
+        type="kotlin.jvm.functions.Function0" />
+
+    <variable
+        name="onThickThreadClick"
+        type="kotlin.jvm.functions.Function0" />
+  </data>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/uiYarnSizeThinContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> onThinThreadClick.invoke()}"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/uiYarnSizeThinImage"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_margin="16dp"
+          app:srcCompat="@drawable/ic_yarn_s" />
+
+      <TextView
+          android:id="@+id/uiYarnThinText"
+          style="?attr/textAppearanceBody1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginStart="8dp"
+          android:text="@string/add_yarn_chooser_thin_thread" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/uiYarnSizeRegularContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> onRegularThreadClick.invoke()}"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/uiYarnSizeRegularImage"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_margin="16dp"
+          app:srcCompat="@drawable/ic_yarn_m" />
+
+      <TextView
+          android:id="@+id/uiYarnSizeRegularText"
+          style="?attr/textAppearanceBody1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginStart="8dp"
+          android:text="@string/add_yarn_chooser_regular_thread" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/uiYarnSizeThickContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> onThickThreadClick.invoke()}"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/uiYarnSizeThickImage"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_margin="16dp"
+          app:srcCompat="@drawable/ic_yarn_l" />
+
+      <TextView
+          android:id="@+id/uiYarnSizeThickText"
+          style="?attr/textAppearanceBody1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginStart="8dp"
+          android:text="@string/add_yarn_chooser_thick_thread" />
+    </LinearLayout>
+
+  </LinearLayout>
+</layout>

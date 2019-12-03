@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Theme.ShapeAppearance.Button" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerFamilyTopLeft">cut</item>
+    <item name="cornerFamilyBottomRight">cut</item>
+    <item name="cornerSizeTopLeft">8dp</item>
+    <item name="cornerSizeBottomRight">8dp</item>
+  </style>
+
+  <style name="Theme.ShapeAppearance.ButtonGroup" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerSizeTopLeft">0dp</item>
+    <item name="cornerSizeBottomRight">0dp</item>
+    <item name="cornerSizeTopRight">0dp</item>
+    <item name="cornerSizeBottomLeft">0dp</item>
+  </style>
+
+  <style name="Theme.ShapeAppearance.ButtonGroup.Left" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerSizeTopLeft">8dp</item>
+    <item name="cornerFamilyTopLeft">cut</item>
+  </style>
+
+  <style name="Theme.ShapeAppearance.ButtonGroup.Right" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerSizeBottomRight">8dp</item>
+    <item name="cornerFamilyBottomRight">cut</item>
+  </style>
+
+  <style name="Theme.ShapeAppearance.TextInputLayout" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerSizeTopLeft">8dp</item>
+    <item name="cornerSizeBottomRight">8dp</item>
+    <item name="cornerFamilyTopLeft">cut</item>
+    <item name="cornerFamilyBottomRight">cut</item>
+  </style>
+
+  <style name="Theme.ShapeAppearance.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerFamily">cut</item>
+    <item name="cornerSize">8dp</item>
+  </style>
+
+  <style name="Theme.ShapeAppearance.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+    <item name="cornerFamily">cut</item>
+    <item name="cornerSize">8dp</item>
+  </style>
+
+  <style name="Theme.ShapeAppearance.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent" />
+
+  <style name="Theme.ShapeAppearanceOverlay.TextInputLayout" parent="ShapeAppearanceOverlay.MaterialComponents.TextInputLayout.FilledBox">
+    <item name="cornerSizeTopRight">0dp</item>
+  </style>
+
+    <style name="Theme.ShapeAppearance.BottomSheetDialog" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+    </style>
+
+</resources>

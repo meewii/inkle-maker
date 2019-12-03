@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/yps_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="0dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingStart="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        app:errorEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="0dp"
+          android:layout_marginBottom="0dp"
+          android:clickable="false"
+          android:enabled="false"
+          android:focusable="false"
+          android:paddingStart="0dp"
+          android:paddingLeft="0dp"
+          android:paddingTop="0dp"
+          android:paddingEnd="0dp"
+          android:paddingRight="0dp"
+          android:paddingBottom="0dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/yps_label"
+        style="?attr/textAppearanceCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/background"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/set_up_yarns_hint"
+        android:textColor="@color/primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yps_label_weft"
+        style="?attr/textAppearanceCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/set_up_weft_hint"
+        android:textColor="@color/primary"
+        app:layout_constraintEnd_toEndOf="@+id/yps_weft_container"
+        app:layout_constraintStart_toStartOf="@+id/yps_weft_container"
+        app:layout_constraintTop_toBottomOf="@+id/yps_label" />
+
+    <FrameLayout
+        android:id="@+id/yps_weft_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yps_warp_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yps_label_weft">
+
+      <ImageView
+          android:id="@+id/yps_label_weft_icon"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_marginEnd="40dp"
+          android:background="@drawable/ic_yarn_background_shape"
+          android:tint="@color/white"
+          app:srcCompat="@drawable/ic_yarn_m" />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|end"
+          android:layout_margin="8dp"
+          android:tint="?colorOnBackground"
+          app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/gray_light"
+        app:layout_constraintBottom_toBottomOf="@+id/yps_weft_container"
+        app:layout_constraintStart_toEndOf="@+id/yps_weft_container"
+        app:layout_constraintTop_toTopOf="@+id/yps_label_weft" />
+
+    <TextView
+        android:id="@+id/yps_label_warp"
+        style="?attr/textAppearanceCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/set_up_warp_hint"
+        android:textColor="@color/primary"
+        app:layout_constraintEnd_toEndOf="@+id/yps_warp_container"
+        app:layout_constraintStart_toStartOf="@+id/yps_warp_container"
+        app:layout_constraintTop_toBottomOf="@+id/yps_label" />
+
+    <FrameLayout
+        android:id="@+id/yps_warp_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yps_weft_container"
+        app:layout_constraintTop_toBottomOf="@+id/yps_label_warp">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/yps_warp_recycler"
+          android:layout_width="match_parent"
+          android:layout_height="54dp"
+          android:paddingStart="0dp"
+          android:paddingEnd="48dp" />
+
+      <ImageView
+          android:id="@+id/yps_warp_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|end"
+          android:layout_margin="12dp"
+          android:tint="?colorOnBackground"
+          app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
+    </FrameLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <TextView
+      android:id="@+id/yps_error"
+      style="?attr/textAppearanceCaption"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingStart="108dp"
+      android:paddingEnd="8dp"
+      android:textColor="@color/error"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/yps_background"
+      tools:text="Some error"
+      tools:visibility="visible" />
+
+</LinearLayout>
